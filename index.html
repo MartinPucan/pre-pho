@@ -7,23 +7,44 @@
 </head>
 <body>
 <section>
-  <div class="wrapper">
-    <div id="prefix-flag" class="dropdown-flag">
+  <div class="tel-input">
+    <div id="prefix-flag" data-toggle="prefix-flag" class="dropdown-flag">
       <span class="flag-icon flag-icon-cz"></span>
       <i class="arrow down"></i>
     </div>
-    <ul id="tel-list" class="dn">
-      <li>
-        <span>America</span>
-        <span>Hell</span>
-        <span>Yeah</span>
+    <ul id="tel-list" class="tel-list dn">
+      <li id="us" value="1">
+        <span class="flag-icon flag-icon-us"></span>
+        <span>United States</span>
+        <span>+1</span>
+      </li>
+      <li id="ca" value="1">
+        <span class="flag-icon flag-icon-ca"></span>
+        <span>Canada</span>
+        <span>+1</span>
+      </li>
+      <li value="32">
+        <span class="flag-icon flag-icon-be"></span>
+        <span>Belgium</span>
+        <span>+32</span>
+      </li>
+      <li value="5">
+        <span class="flag-icon flag-icon-ca"></span>
+        <span>Canada</span>
+        <span>+1</span>
+      </li>
+      <li value="5">
+        <span class="flag-icon flag-icon-ca"></span>
+        <span>Canada</span>
+        <span>+1</span>
       </li>
       <li></li>
       <li></li>
       <li></li>
       <li></li>
     </ul>
-    <input type="text" id="prefix-phone" class="mobile-padding" />
+    <input type="text" id="prefix" class="mobile-padding" />
+    <input type="tel" id="phone" />
   </div>
 
 </section>
