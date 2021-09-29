@@ -4,8 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "parcel serve index.html",
+    "dev:css": "parcel watch src/scss/*.scss --no-source-maps -d dist/ --no-hmr --public-url ./",
+    "build:css": "parcel build src/scss/*.scss --no-source-maps -d dist/ --public-url ./",
+    "dev:js": "parcel build src/js/*.js --no-source-maps -d dist/ --public-url ./",
+    "build:js": "parcel build src/js/*.js --no-source-maps -d dist/ --public-url ./"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.42.1"
+  }
 }
